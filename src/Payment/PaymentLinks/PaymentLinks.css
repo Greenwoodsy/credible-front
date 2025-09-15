@@ -1,0 +1,53 @@
+.paymentLinksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD BASE STYLE */
+.paymentLinkItem {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 260px;
+  background-color: var(--nav-btns-bg); /* Calm soft green */
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.75rem 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: var(--text-light);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.paymentLinkItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON STYLE */
+.paymentLinkItem .iconPay {
+  font-size: 2rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+/* TEXT STYLE */
+.paymentLinkItem .depoPay {
+  font-size: 1rem;
+  font-weight: 600;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* MOBILE TWEAK */
+@media (max-width: 480px) {
+  .paymentLinkItem {
+    flex: 1 1 100%;
+    max-width: 110%;
+    padding: 1.5rem;
+  }
+}

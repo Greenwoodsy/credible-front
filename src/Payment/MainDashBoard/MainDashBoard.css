@@ -1,0 +1,91 @@
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: var(--section-2-bg);
+  color: var(--nav-logo);
+}
+
+.sidebar {
+  background: var(--section-4-card);
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--nav-links);
+}
+
+.user-block h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.user-block p {
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.quick-links {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 1.2rem;
+  color: var(--workflow-title-color);
+  display: flex;
+  text-align: center;
+}
+
+.main-panel {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.top-summary {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.summary-box {
+  background: var(--section-4-card);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.summary-box h4 {
+  color: var(--nav-links);
+  margin-bottom: 0.5rem;
+}
+
+.summary-box p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--green-primary);
+}
+
+.activity-log {
+  background: var(--section-4-card);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--nav-links);
+  }
+
+  .main-panel {
+    padding: 1rem;
+  }
+}

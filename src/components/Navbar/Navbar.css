@@ -1,0 +1,319 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--nav-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.navbar .navCon {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.navbar-brand .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--nav-logo);
+}
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .nav-links a {
+  color: var(--nav-links);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.navbar .nav-links a:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+.navbar .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+/* Navbar.css */
+
+.navbar .nav-actions .icon {
+  display: none;
+}
+.navbar .nav-actions .loginButton {
+  background-color: var(--nav-btns-bg);
+  color: var(--nav-btns-text);
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.navbar .nav-actions .loginButton:hover {
+  background-color: var(--nav-btns-bg-hover);
+}
+
+.navbar .nav-actions .loginButton:active {
+  background-color: var(--login-button-bg-hover);
+  /*DarkPurple*/
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.navbar .nav-actions .loginButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--login-button-bg); /* Focus shadow in Dark Purple */
+}
+
+.navbar .icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #207567;
+  transition: color 0.3s ease, transform 0.2s ease;
+  -webkit-transition: color 0.3s ease, transform 0.2s ease;
+  -moz-transition: color 0.3s ease, transform 0.2s ease;
+  -ms-transition: color 0.3s ease, transform 0.2s ease;
+  -o-transition: color 0.3s ease, transform 0.2s ease;
+}
+.navbar .icon:hover {
+  color: var(--nav-links-hover, #207567); /* customize this if needed */
+  transform: scale(1.1);
+}
+
+.navbar .icon:active {
+  transform: scale(0.95);
+  color: var(
+    --nav-links-active,
+    #144d44
+  ); /* slightly darker for click feedback */
+}
+
+.navbar .fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-color, #fff);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar .logoutBtn {
+  background: var(--primary-color, #333);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2rem 1rem 0rem 1rem;
+}
+.navbar .profileText {
+  display: none;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.navbar .nav-actions .notificationBell:hover {
+  animation: shake 0.5s ease-in-out 1;
+  animation-iteration-count: 1;
+}
+
+/* Media Quary start */
+
+/* Ultra-large devices (large desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+}
+
+/* Extra large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1128px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar .navCon {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .navbar .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .navbar .loginButton {
+    display: none;
+  }
+  .navbar .navCon .nav-links {
+    display: none;
+  }
+  .navbar .profileImg {
+    display: none;
+  }
+
+  .navbar .nav-actions .icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    color: #207567;
+    transition: color 0.3s ease, transform 0.2s ease;
+    -webkit-transition: color 0.3s ease, transform 0.2s ease;
+    -moz-transition: color 0.3s ease, transform 0.2s ease;
+    -ms-transition: color 0.3s ease, transform 0.2s ease;
+    -o-transition: color 0.3s ease, transform 0.2s ease;
+  }
+
+  .fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch children full width */
+    justify-content: center;
+    gap: 0; /* tighter spacing, control in .menu-item instead */
+    padding: 2rem 1rem 0rem 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  .fullscreen-menu .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Prevent excessive stretching on very wide screens */
+    margin: 0 auto; /* Center the content block itself, not the text */
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    color: var(--nav-links);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-sizing: border-box;
+  }
+
+  .fullscreen-menu .menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .fullscreen-menu .menu-icon {
+    font-size: 1.2rem;
+    color: var(--nav-links);
+  }
+  .navbar .fullscreen-menu .logoutBtn {
+    background-color: var(--nav-btns-bg);
+    color: var(--nav-btns-text);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+
+    /* Center the button */
+    align-self: center;
+    text-align: center;
+
+    /* Responsive width */
+    width: 90%;
+    max-width: 400px;
+    margin-top: 1rem;
+
+    /* Optional smooth interaction */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .navbar .fullscreen-menu .logoutBtn:hover {
+    background-color: var(
+      --nav-btns-hover-bg
+    ); /* Optional hover color variable */
+    transform: scale(1.02);
+  }
+
+  /* .navbar .fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar .fullscreen-menu a {
+    color: var(--nav-links);
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar .fullscreen-menu .logoutBtn {
+    background-color: var(--nav-btns-bg);
+    color: var(--nav-btns-text);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .navbar .nav-actions .loginButton {
+    display: none;
+  } */
+}

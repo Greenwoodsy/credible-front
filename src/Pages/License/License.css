@@ -1,0 +1,47 @@
+.license-wrapper {
+  background-color: var(--section-2-bg);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.license-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.license-heading {
+  font-size: 28px;
+  color: var(--plan-title);
+  margin-bottom: 10px;
+}
+
+.license-description {
+  color: var(--text-dark);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.license-details {
+  text-align: left;
+  color: var(--text-dark);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.license-details p {
+  margin: 8px 0;
+}
+
+.license-photo {
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid var(--nav-logo);
+  border-radius: 10px;
+}

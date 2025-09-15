@@ -1,0 +1,98 @@
+.plans-section {
+  background-color: var(--plan-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.plans-title {
+  color: var(--plan-title);
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.plans-subtitle {
+  color: var(--plan-desc);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.plans-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: stretch;
+}
+
+.plan-item {
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, var(--green-primary), var(--green-light));
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.plan-item:hover {
+  transform: scale(1.03);
+}
+
+.plan-top {
+  background-color: var(--green-primary);
+  padding: 2.5rem 1rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.percent-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-light);
+  z-index: 2;
+  position: relative;
+}
+
+/* Wave divider with light green fill */
+.wave-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 500 150' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'><path d='M0,30 C150,80 350,0 500,30 L500,150 L0,150 Z' fill='%23c7ede6'/></svg>") no-repeat;
+  background-size: cover;
+}
+
+/* Bottom section */
+.plan-info {
+  padding: 1.5rem 1.5rem 2rem;
+  text-align: center;
+  background-color: var(--green-light);
+  color: var(--text-dark);
+}
+
+.plan-duration,
+.plan-range {
+  margin: 0.6rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.plan-cta {
+  margin-top: 1.2rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--green-dark);
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.plan-cta:hover {
+  background-color: var(--green-primary);
+}

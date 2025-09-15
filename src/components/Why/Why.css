@@ -1,0 +1,81 @@
+.why-section {
+  background-color: var(--section-4-bg);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.why-title {
+  color: var(--section-4-header);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.why-subtitle {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.why-card {
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  color: var(--text-light);
+  width: 300px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.why-card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.why-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.why-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Unique colors for each card */
+.card-one {
+  background: linear-gradient(135deg, #2a9d8f, #207567);
+}
+
+.card-two {
+  background: linear-gradient(135deg, #146356, #80cfa9);
+}
+
+.card-three {
+  background: linear-gradient(135deg, #205c4e, #2a9d8f);
+}
+
+.card-four {
+  background: linear-gradient(135deg, #104d42, #207567);
+}
+
+.card-five {
+  background: linear-gradient(135deg, #2a9d8f, #146356);
+}

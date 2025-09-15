@@ -1,0 +1,90 @@
+.team-section {
+  padding: 60px 20px;
+  background: url("../../Assets/confirm.avif") center/cover no-repeat;
+  text-align: center;
+  position: relative;
+}
+
+.team-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+}
+
+.team-header {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--section-3-header);
+  position: relative;
+  z-index: 1;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.team-card {
+  background: var(--section-4-card);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--section-4-card-icon);
+}
+
+.team-info-inline {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.team-title {
+  font-size: 1rem;
+  color: var(--section-4-card-icon);
+  margin: 5px 0 0;
+}
+
+.team-icon {
+  color: var(--section-4-card-icon);
+}
+
+.team-description {
+  font-size: 0.95rem;
+  color: var(--workflow-text-color);
+  line-height: 1.5;
+  margin-top: 15px;
+}

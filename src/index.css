@@ -1,0 +1,118 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for the entire page */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+
+:root {
+  --nav-bg: rgb(245, 247, 245);
+  --nav-links: #2a9d8f;
+  --nav-linkss: #57cabd;
+  --nav-logo: #207567;
+  --nav-btns-bg: #207567;
+  --nav-btns-text: #ffffff;
+  --nav-btns-bg-hover: #2a9d8f;
+  --nav-btns-bg-hovers: #91dbd3;
+
+  --login-bg: #edf7f4;
+  --login-bg-card: #f5fbf9;
+  --login-bg-h2-color: #207567;
+
+  --login-input-text: #333;
+  --login-input-bg-border: #80cfa9;
+  --login-input-bg: #ffffff;
+
+  --login-btn-bg: #146356;
+  --login-btn-text: #ffffff;
+  --login-btn-br-hover: #104d42;
+  --login-btn-text-hover: #ffffff;
+  --UserDontHaveAccount-p: #666;
+  --UserDontHaveAccount: #207567;
+  --UserDontHaveAccount-hover: #104d42;
+
+  --hero-text-one: #ffffff;
+  --hero-text-one-span: #80cfa9;
+  --hero-text-two: #f5f5f5;
+
+  /* Section 2 */
+  --section-2-bg: #f2f9f6;
+  --section-2-header: #205c4e;
+  --section-2-card: #e6f4ef;
+
+  /* Section 3 */
+  --section-3-bg: #146356;
+  --section-3-bcard: #1a7a66;
+  --section-3-header: #ffffff;
+  --section-3-p: #edf7f4;
+  --section-3-btn: #edf7f4;
+  --section-3-btn-hover: #146356;
+  --section-3-btn-text: #146356;
+  --section-3-btn-text-hover: #edf7f4;
+  --card-image-bg: #ffffff;
+  --card-image-text: #333333;
+
+  /* Section 4 */
+  --section-4-bg: #f2f9f6;
+  --section-4-header: #205c4e;
+  --section-4-card: #e6f4ef;
+  --section-4-card-icon: #2a9d8f;
+
+  /* Section 5 */
+  --section-5-bg: #f2f9f6;
+  --section-5-header: #f2f9f6;
+  --section-5-card: #e6f4ef;
+  --section-5-card-icon: #2a9d8f;
+
+  /* Plans */
+  --plans-text: #205c4e;
+  --plan-bg: #f2f9f6;
+  --plan-title: #104d42;
+  --plan-price: #205c4e;
+  --plan-desc: #6c757d;
+  --plan-button: #205c4e;
+
+  /* Workflow */
+  --workflow-card-bg: #e6f4ef;
+  --workflow-icon-bg: #2a9d8f;
+  --workflow-title-color: #205c4e;
+  --workflow-text-color: #333333;
+
+  /* Contact Us */
+  --Contact-us-bg: #f2f9f6;
+  --big-circle-contact: #f2f9f6;
+
+  /* Primary green family */
+  --green-primary: #2a9d8f;
+  --green-dark: #146356;
+  --green-light: #c7ede6;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+
+  /* Dashboard */
+  --dashboard-h2: #80cfa9;
+  --dashboard-name: #207567;
+  --dashboard-name-hover: #2a9d8f;
+}
+
+[data-theme="dark"] {
+}

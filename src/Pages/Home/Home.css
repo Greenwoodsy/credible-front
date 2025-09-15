@@ -1,0 +1,101 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-image: url("../../Assets/lastone.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;  /* stack text + button vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;      /* center text */
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.hero-content .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content .text-content h1 {
+  color: var(--hero-text-one);
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content .text-content h1 span {
+  color: var(--hero-text-one-span);
+  padding-right: 6px;
+}
+
+.hero-content .text-content p {
+  color: var(--hero-text-two);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.hero-content .text-content a {
+  background: var(--nav-btns-bg);
+  color: var(--nav-btns-text);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all ease 400ms;
+}
+
+.hero-content .text-content a:hover {
+  background: var(--nav-btns-bg-hover);
+}
+
+@media only screen and (max-width: 415px) {
+  .hero-content .text-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .text-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 364px) {
+  .hero-content .text-content h1 {
+    font-size: 1.5rem;
+  }
+}

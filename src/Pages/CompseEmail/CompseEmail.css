@@ -1,0 +1,78 @@
+.compose-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--login-bg-card);
+  border: 1px solid var(--login-input-bg-border);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.compose-container h2 {
+  text-align: center;
+  color: var(--dashboard-name);
+  margin-bottom: 25px;
+}
+
+.compose-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.compose-form input,
+.compose-form textarea {
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid var(--login-input-bg-border);
+  border-radius: 6px;
+  background-color: var(--login-input-bg);
+  color: var(--login-input-text);
+  outline: none;
+  resize: none;
+}
+
+.compose-form button {
+  padding: 12px;
+  background-color: var(--login-btn-bg);
+  color: var(--login-btn-text);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compose-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.compose-form button:hover:not(:disabled) {
+  background-color: var(--login-btn-br-hover);
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .compose-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .compose-form button {
+    font-size: 14px;
+  }
+}
