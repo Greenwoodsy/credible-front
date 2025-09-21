@@ -26,7 +26,7 @@ const ComposeEmail = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/api/users/sendComposedEmail`,
+        `${process.env.REACT_APP_BACKEND_URL}api/users/sendComposedEmail`,
         formData
       );
       setSuccess('Email sent successfully!');
