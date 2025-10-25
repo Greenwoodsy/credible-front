@@ -51,14 +51,6 @@ const AdminPendingKyc = () => {
               <h3 className="user-name">Name: {user.name}</h3>
               <p className="user-email">Email: {user.email}</p>
               <p className="user-status">KYC Status: {user.kycStatus}</p>
-              <div className="kyc-documents">
-                <a className="doc-link" href={user.kyc.frontDoc} target="_blank" rel="noopener noreferrer">
-                  View Front
-                </a>
-                <a className="doc-link" href={user.kyc.backDoc} target="_blank" rel="noopener noreferrer">
-                  View Back
-                </a>
-              </div>
               <div className="kyc-actions">
                 <button
                   className={`approve-btn ${actionLoading ? "blurred" : ""}`}
