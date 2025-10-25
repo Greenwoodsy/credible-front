@@ -10,7 +10,6 @@ import Notification from "../../components/Notification/Notification";
 import "./UploadKyc.css";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
-const ALLOWED_FORMATS = /jpeg|jpg|png|gif|webp|bmp|heic|pdf/;
 
 const UploadKyc = () => {
   const [frontDoc, setFrontDoc] = useState(null);
