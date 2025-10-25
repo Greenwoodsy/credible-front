@@ -10,6 +10,7 @@ import Notification from "../../components/Notification/Notification";
 import "./UploadKyc.css";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+const ALLOWED_FORMATS = /jpeg|jpg|png|gif|webp|bmp|heic|pdf/;
 
 const UploadKyc = () => {
   const [frontDoc, setFrontDoc] = useState(null);
@@ -25,21 +26,8 @@ const UploadKyc = () => {
   const validateFile = (file) => {
     if (!file) return "Please select a file.";
     if (file.size > MAX_FILE_SIZE) return "File size must be less than 10MB.";
-
-    const allowedMimes = [
-      "image/jpeg",
-      "image/jpg",
-      "image/png",
-      "image/webp",
-      "image/heic",
-      "image/heif",
-      "application/pdf",
-    ];
-
-    if (!allowedMimes.includes(file.type)) {
-      return "Unsupported format. Try JPG/PNG/PDF.";
-    }
-
+    if (!ALLOWED_FORMATS.test(file.type.split("/")[1]))
+      return "Invalid file format. Only JPEG, JPG, PNG, and PDF are allowed.";
     return null;
   };
 
@@ -92,6 +80,7 @@ const UploadKyc = () => {
         navigate("/my-account");
         window.location.reload();
       }, 2000);
+      
     } catch (error) {
       console.error("Upload error:", error.response || error.message);
       toast.error("Upload failed. Please try again.");
