@@ -77,7 +77,7 @@ const UploadKyc = () => {
       backForm.append("file", backDoc);
       backForm.append("upload_preset", UPLOAD_PRESET);
 
-      const backRes = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/upload`, {
+      const backRes = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
         method: "POST",
         body: backForm,
       });
