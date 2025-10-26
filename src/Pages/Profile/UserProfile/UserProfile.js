@@ -99,7 +99,7 @@ const UserProfile = () => {
 
         // Save image to Cloudinary
         const response = await fetch(
-          "https://api.cloudinary.com/v1_1/dpmhsknxz/image/upload",
+          "https://api.cloudinary.com/v1_1/dgbse9qr1/image/upload",
           { method: "post", body: image }
         );
         const imgData = await response.json();
